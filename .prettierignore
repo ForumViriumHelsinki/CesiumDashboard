@@ -1,0 +1,12 @@
+.vscode/
+node_modules
+dist
+coverage/
+*.json
+*.yml
+*.yaml
+.gitlab-jobs/
+.github/
+CHANGELOG.md
+package.json
+package-lock.json
