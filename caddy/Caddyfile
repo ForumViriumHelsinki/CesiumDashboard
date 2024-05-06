@@ -1,0 +1,22 @@
+(cors) {
+  @cors_preflight method OPTIONS
+  header {
+    Access-Control-Allow-Origin "*"
+    Access-Control-Allow-Methods "GET, POST, PUT, PATCH, DELETE, OPTIONS"
+    Access-Control-Allow-Headers "*"
+    Access-Control-Max-Age "3600"
+  }
+  handle @cors_preflight {
+    respond "" 204
+  }
+
+  handle {
+    header Access-Control-Allow-Origin "*"
+  }
+}
+
+:80 {
+    root * /3dtiles
+    file_server
+    import cors
+}

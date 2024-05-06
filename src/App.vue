@@ -1,22 +1,14 @@
+<!-- Main Vue app -->
 <script setup lang="ts">
 import CesiumViewer from "./components/CesiumViewer.vue";
+import SideMenu from "./components/SideMenu.vue";
 </script>
 
 <template>
-    <CesiumViewer />
+    <div>
+        <v-layout>
+            <SideMenu />
+            <CesiumViewer v-once />
+        </v-layout>
+    </div>
 </template>
-
-<style scoped>
-.logo {
-    height: 6em;
-    padding: 1.5em;
-    will-change: filter;
-    transition: filter 300ms;
-}
-.logo:hover {
-    filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.vue:hover {
-    filter: drop-shadow(0 0 2em #42b883aa);
-}
-</style>
