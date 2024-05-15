@@ -4,6 +4,10 @@ Visualize road condition data at Helsinki in a Cesium 3D-viewer using the YLRE-r
 
 This application includes data from two test areas: Lönnrotinkatu and Mäkelänkatu-Teollisuuskatu-Sturenkatu triangle.
 
+## Original implementation by Advian
+
+Gitlab repository of original implementation by Advian can be found [here](https://gitlab.com/advian-oss/hel-roadcondition)
+
 ## Development
 
 If using experimental local 3dtiles, serve through caddy fileserver by saying `docker run -p 8080:80 -v $PWD/caddy/Caddyfile:/etc/caddy/Caddyfile -v /my_local/3dtile_path:/3dtiles caddy:latest`
