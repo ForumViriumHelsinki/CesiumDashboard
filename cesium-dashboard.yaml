@@ -1,0 +1,53 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: cesium-dashboard
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: cesium-dashboard
+  template:
+    metadata:
+      labels:
+        app: cesium-dashboard
+    spec:
+      containers:
+      - name: cesium-dashboard
+        image: ghcr.io/forumviriumhelsinki/cesium-dashboard:latest
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: cesium-dashboard
+spec:
+  ports:
+    - port: 80
+      targetPort: 4173
+  selector:
+    app: cesium-dashboard
+---
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: cesium-dashboard
+  annotations:
+    cert-manager.io/cluster-issuer: "letsencrypt-prod"
+spec:
+  ingressClassName: nginx
+  tls:
+  - hosts:
+    - cesium-dashboard.dataportal.fi
+    secretName: cesium-dashboard-tls
+  rules:
+    - host: cesium-dashboard.dataportal.fi
+      http:
+        paths:
+          - pathType: Prefix
+            path: /
+            backend:
+              service:
+                name: cesium-dashboard
+                port:
+                  name: http
