@@ -25,7 +25,8 @@ metadata:
   name: cesium-dashboard
 spec:
   ports:
-    - port: 80
+    - name: http
+      port: 80
       targetPort: 4173
   selector:
     app: cesium-dashboard
