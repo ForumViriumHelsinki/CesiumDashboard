@@ -165,7 +165,7 @@ export const otherLayers: LayerItemProps[] = [
         opacity: 1.0,
         show: true,
         enabled: true,
-    },                 
+    },
     {
         attributes: ["paatyyppi", "alatyyppi"],
         layerName: "Road lines",
