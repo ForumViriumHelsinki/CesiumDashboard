@@ -26,8 +26,7 @@ import { LayerItemProps } from "./LayerItem.vue";
 
 const store = useStateStore();
 const prod = import.meta.env.PROD;
-// const TILE_BASE_URL = prod ? "https://hel-roadcondition.s3.eu-north-1.amazonaws.com/3dtiles" : "http://localhost:8080";
-const TILE_BASE_URL = "https://dl2sa.blob.core.windows.net/public3d/katukuntotieto";
+const TILE_BASE_URL = import.meta.env.VITE_TILE_BASE_URL;
 console.log(`Tile base url (prod=${prod}): ${TILE_BASE_URL}`);
 
 onMounted(async () => {
