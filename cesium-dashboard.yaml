@@ -23,6 +23,13 @@ spec:
           name: cesium-dashboard-config
 ---
 apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: cesium-dashboard-config
+data:
+  VITE_TILE_BASE_URL: "https://dl2sa.blob.core.windows.net/public3d/katukuntotieto"
+---
+apiVersion: v1
 kind: Service
 metadata:
   name: cesium-dashboard

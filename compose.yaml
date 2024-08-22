@@ -4,5 +4,7 @@ services:
       context: .
     environment:
       NODE_ENV: production
+      # VITE_TILE_BASE_URL: "https://hel-roadcondition.s3.eu-north-1.amazonaws.com/3dtiles"
+      VITE_TILE_BASE_URL: "https://dl2sa.blob.core.windows.net/public3d/katukuntotieto"
     ports:
       - 4173:4173
