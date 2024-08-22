@@ -20,7 +20,7 @@ spec:
         - containerPort: 4173
         envFrom:
         - configMapRef:
-          name: cesium-dashboard-config
+            name: cesium-dashboard-config
 ---
 apiVersion: v1
 kind: ConfigMap
