@@ -18,6 +18,9 @@ spec:
         image: ghcr.io/forumviriumhelsinki/cesium-dashboard:latest
         ports:
         - containerPort: 4173
+        envFrom:
+        - configMapRef:
+          name: cesium-dashboard-config
 ---
 apiVersion: v1
 kind: Service
