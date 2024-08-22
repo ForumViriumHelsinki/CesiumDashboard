@@ -1,4 +1,4 @@
-name: cesium-dasbhoard-image
+name: cesium-dashboard-image
 
 on:
   push:
