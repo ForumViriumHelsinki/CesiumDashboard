@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vue-tsc && vite build",
+    "build": "vue-tsc && vite build && vite optimize",
     "deploy": "vue-tsc && vite build && aws s3 sync dist s3://hel-roadcondition --acl public-read --profile advianconsulting",
     "preview": "vite preview --host"
   },
