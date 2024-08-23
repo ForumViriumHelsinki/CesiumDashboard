@@ -4,8 +4,9 @@ WORKDIR /app
 
 COPY . .
 RUN npm install
-RUN npm run build
+RUN npx vite build
+RUN npx vite optimize
 
 EXPOSE 4173
 
-CMD [ "npm", "run", "preview" ]
+CMD [ "npx", "vite", "preview" ]
