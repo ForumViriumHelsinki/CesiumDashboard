@@ -3,10 +3,11 @@ name: cesium-dashboard-image
 on:
   push:
     branches:
-      - 'main'
-    # Publish semver tags as releases.
+      - "**"
     tags:
-      - 'v*.*.*'
+      - "v*.*.*"
+  pull_request:
+
 env:
   REGISTRY: ghcr.io
   IMAGE_NAME: forumviriumhelsinki/cesium-dashboard
