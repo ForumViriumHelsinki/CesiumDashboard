@@ -17,7 +17,7 @@ spec:
       - name: cesium-dashboard
         image: ghcr.io/forumviriumhelsinki/cesium-dashboard:latest
         ports:
-        - containerPort: 4173
+        - containerPort: 80
 ---
 apiVersion: v1
 kind: Service
@@ -27,7 +27,7 @@ spec:
   ports:
     - name: http
       port: 80
-      targetPort: 4173
+      targetPort: 80
   selector:
     app: cesium-dashboard
 ---
