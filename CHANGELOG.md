@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.4.0](https://github.com/ForumViriumHelsinki/CesiumDashboard/compare/v0.3.1...v0.4.0) (2024-08-23)
+
+
+### Features
+
+* remove hardcoded tile base URL, use proxy config instead ([#16](https://github.com/ForumViriumHelsinki/CesiumDashboard/issues/16)) ([4e9bb98](https://github.com/ForumViriumHelsinki/CesiumDashboard/commit/4e9bb981b2dad9159428f652fb5f7678bb62d306))
+
 ## [0.3.0](https://github.com/ForumViriumHelsinki/CesiumDashboard/compare/v0.2.1...v0.3.0) (2024-08-23)
 
 
