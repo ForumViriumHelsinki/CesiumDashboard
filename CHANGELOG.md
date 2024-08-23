@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.5.0](https://github.com/ForumViriumHelsinki/CesiumDashboard/compare/v0.4.2...v0.5.0) (2024-08-23)
+
+
+### Features
+
+* optimize build process & switch to nginx container ([#20](https://github.com/ForumViriumHelsinki/CesiumDashboard/issues/20)) ([0442a83](https://github.com/ForumViriumHelsinki/CesiumDashboard/commit/0442a83ec3d02e0d5211f0b43a83e0b4016b4976)), closes [#18](https://github.com/ForumViriumHelsinki/CesiumDashboard/issues/18)
+
 ## [0.4.0](https://github.com/ForumViriumHelsinki/CesiumDashboard/compare/v0.3.1...v0.4.0) (2024-08-23)
 
 
