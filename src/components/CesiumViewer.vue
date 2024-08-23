@@ -26,8 +26,7 @@ import { LayerItemProps } from "./LayerItem.vue";
 
 const store = useStateStore();
 const prod = import.meta.env.PROD;
-const TILE_BASE_URL = import.meta.env.VITE_TILE_BASE_URL;
-console.log(`Tile base url (prod=${prod}): ${TILE_BASE_URL}`);
+console.log(`Tile base url (prod=${prod})`);
 
 onMounted(async () => {
     // @ts-ignore
@@ -70,7 +69,7 @@ const addConditionLayers = (store: StoreType) => {
         if (!layer.enabled) {
             return;
         }
-        Cesium.Cesium3DTileset.fromUrl(`${TILE_BASE_URL}/${layer.id}/tileset.json`, {
+        Cesium.Cesium3DTileset.fromUrl(`/tiles/${layer.id}/tileset.json`, {
             debugWireframe: false,
             showOutline: true,
             enableShowOutline: true,
@@ -112,7 +111,7 @@ const addBuildings = (store: StoreType) => {
 };
 
 const addCenterlines = (store: StoreType, layer: LayerItemProps) => {
-    Cesium.Cesium3DTileset.fromUrl(`${TILE_BASE_URL}/centerline/tileset.json`, {}).then(lyr => {
+    Cesium.Cesium3DTileset.fromUrl(`/tiles/centerline/tileset.json`, {}).then(lyr => {
         if (store.layers["centerline"]) {
             return;
         }
