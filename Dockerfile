@@ -1,5 +1,7 @@
 FROM --platform=linux/amd64 node:21-alpine
 
+ARG VITE_TILE_BASE_URL="https://dl2sa.blob.core.windows.net/public3d/katukuntotieto"
+
 WORKDIR /app
 
 COPY . .
