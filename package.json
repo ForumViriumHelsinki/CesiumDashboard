@@ -32,7 +32,7 @@
     "eslint-plugin-promise": "^6.1.1",
     "eslint-plugin-vue": "^9.21.1",
     "typescript": "^5.3.3",
-    "vite": "^5.0.8",
+    "vite": "^6.0.0",
     "vite-plugin-cesium": "^1.2.22",
     "vue-tsc": "^1.8.25"
   }
