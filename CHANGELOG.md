@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.6.0](https://github.com/ForumViriumHelsinki/CesiumDashboard/compare/v0.5.1...v0.6.0) (2026-08-28)
+
+
+### Features
+
+* **ci:** adopt reusable auto-fix, review, and conventional commits workflows ([#40](https://github.com/ForumViriumHelsinki/CesiumDashboard/issues/40)) ([b5eb017](https://github.com/ForumViriumHelsinki/CesiumDashboard/commit/b5eb017d741ce6f29ce094cc03aad142c52407c5))
+* migrate cesium-dashboard deploy values to project repo ([#24](https://github.com/ForumViriumHelsinki/CesiumDashboard/issues/24)) ([44e08f7](https://github.com/ForumViriumHelsinki/CesiumDashboard/commit/44e08f79dd746655e3f677072c5ac57977b02b62))
+
 ## [0.5.0](https://github.com/ForumViriumHelsinki/CesiumDashboard/compare/v0.4.2...v0.5.0) (2024-08-23)
 
 
